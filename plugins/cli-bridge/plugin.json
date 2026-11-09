@@ -1,0 +1,7 @@
+{
+  "manifest_version": "1.0.0",
+  "name": "cli-bridge",
+  "version": "1.0.0",
+  "description": "Universal CLI execution bridge for Hermes Agent (Cursor, Codex, Antigravity, OpenCode, Kimi)",
+  "entry_point": "__init__.py"
+}

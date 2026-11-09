@@ -1,0 +1,20 @@
+name: cli-bridge
+kind: tool-plugin
+version: "1.0.0"
+description: "Universal CLI bridge connecting Hermes Agent to Cursor, Codex, Antigravity, OpenCode, and Kimi"
+entry_point: __init__.py
+provides_tools:
+  - name: cli_bridge
+    description: "Delegate tasks to local Cursor, Codex, Antigravity, OpenCode, or Kimi clients"
+  - name: run_cursor
+    description: "Execute instructions using Cursor Agent CLI"
+  - name: run_codex
+    description: "Execute instructions using OpenAI Codex CLI"
+  - name: run_antigravity
+    description: "Execute instructions using Google Antigravity CLI"
+  - name: run_opencode
+    description: "Execute instructions using OpenCode CLI"
+  - name: run_kimi
+    description: "Execute instructions using Moonshot Kimi CLI"
+  - name: list_available_clients
+    description: "Check status and paths of local coding clients"

@@ -1,0 +1,36 @@
+name: subscription-bridge
+kind: model-provider
+version: "1.0.0"
+description: "Zero-API-key subscription model provider bridge for Hermes Agent (Port 5288)"
+entry_point: __init__.py
+endpoint: "http://127.0.0.1:5288/v1"
+supported_models:
+  - id: codex/default
+    name: "Codex: Default"
+  - id: codex/o3
+    name: "Codex: o3"
+  - id: codex/o3-mini
+    name: "Codex: o3-mini"
+  - id: codex/gpt-4o
+    name: "Codex: GPT-4o"
+  - id: codex/gpt-5
+    name: "Codex: GPT-5"
+  - id: antigravity/gemini-3.8-flash
+    name: "Antigravity: Gemini 3.8 Flash"
+  - id: antigravity/gemini-3.8-pro
+    name: "Antigravity: Gemini 3.8 Pro"
+  - id: claude/claude-sonnet-5
+    name: "Claude: Sonnet 5"
+  - id: claude/claude-opus-4.8
+    name: "Claude: Opus 4.8"
+  - id: cursor/composer-2.5
+    name: "Cursor: Composer 2.5"
+  - id: kimi/kimi-code
+    name: "Kimi: Kimi Code"
+provides_tools:
+  - name: get_subscription_gateway_status
+    description: "Check if the subscription bridge daemon on port 5288 is running and healthy"
+  - name: list_subscription_models
+    description: "Query available zero-token subscription models from local gateway"
+  - name: start_subscription_gateway
+    description: "Start the subscription authorization gateway daemon"

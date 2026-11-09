@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="costBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <filter id="costShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="480" fill="url(#costBg)" />
+
+  <text x="500" y="45" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700" fill="#f8fafc">Economic Comparison: Metered API Tokens vs. Hermes Subscription Bridge</text>
+  <text x="500" y="70" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#94a3b8">Slashing Monthly Multi-Agent AI Development Costs by up to 92%</text>
+
+  <!-- Card 1: Traditional Metered API -->
+  <g filter="url(#costShadow)">
+    <rect x="70" y="110" width="410" height="300" rx="12" fill="#1e293b" stroke="#ef4444" stroke-width="2" />
+    <rect x="70" y="110" width="410" height="36" rx="12" fill="#b91c1c" />
+    <text x="90" y="134" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#ffffff">Traditional API-Key Metering (Pay-Per-Token)</text>
+    
+    <text x="90" y="180" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#fca5a5">• OpenAI API: ~$15 - $30 / million tokens (o3/gpt-4o)</text>
+    <text x="90" y="215" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#fca5a5">• Anthropic API: ~$15 - $75 / million tokens (Sonnet/Opus)</text>
+    <text x="90" y="250" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#fca5a5">• Multi-Agent loops burn 500k - 2M tokens daily</text>
+    <text x="90" y="285" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#fca5a5">• Average Monthly Bill: $350 - $900+ USD</text>
+    
+    <rect x="90" y="325" width="370" height="60" rx="8" fill="#450a0a" stroke="#ef4444" />
+    <text x="275" y="350" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#fca5a5">High Recurring API Risk</text>
+    <text x="275" y="370" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#f87171">Double billing: Paying for flat subscriptions + metered API keys</text>
+  </g>
+
+  <!-- Card 2: Subscription Bridge -->
+  <g filter="url(#costShadow)">
+    <rect x="520" y="110" width="410" height="300" rx="12" fill="#1e293b" stroke="#10b981" stroke-width="2" />
+    <rect x="520" y="110" width="410" height="36" rx="12" fill="#047857" />
+    <text x="540" y="134" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#ffffff">Hermes Subscription Bridge (Zero API Keys)</text>
+    
+    <text x="540" y="180" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#6ee7b7">• Flat ChatGPT Plus/Pro Subscription: Included</text>
+    <text x="540" y="215" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#6ee7b7">• Google Antigravity / Gemini Subscription: Included</text>
+    <text x="540" y="250" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#6ee7b7">• Cursor Pro &amp; Kimi VIP Subscriptions: Included</text>
+    <text x="540" y="285" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#6ee7b7">• Incremental API Token Cost: $0.00 USD</text>
+    
+    <rect x="540" y="325" width="370" height="60" rx="8" fill="#064e3b" stroke="#10b981" />
+    <text x="725" y="350" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#a7f3d0">Maximized ROI &amp; Predictable Cost</text>
+    <text x="725" y="370" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#34d399">Total savings: 75% to 92% compared to raw API tokens</text>
+  </g>
+
+  <!-- Bottom ROI Metric -->
+  <text x="500" y="445" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#38bdf8">Designed &amp; Maintained by Dr. Eng. Hossam Zein • Open Source for Hermes Agent Community</text>
+</svg>

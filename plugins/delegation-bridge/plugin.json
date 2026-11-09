@@ -1,0 +1,7 @@
+{
+  "manifest_version": "1.0.0",
+  "name": "delegation-bridge",
+  "version": "1.0.0",
+  "description": "Review-First cross-agent delegation bridge for Hermes Agent (Cursor, Codex, Antigravity, OpenCode, Kimi)",
+  "entry_point": "__init__.py"
+}

@@ -1,0 +1,7 @@
+{
+  "manifest_version": "1.0.0",
+  "name": "subscription-bridge",
+  "version": "1.0.0",
+  "description": "Zero-API-key subscription model provider bridge for Hermes Agent (Port 5288)",
+  "entry_point": "__init__.py"
+}

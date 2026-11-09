@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="600" fill="url(#bgGrad)" />
+
+  <!-- Header -->
+  <text x="500" y="45" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">Awesome Plugins for Hermes Agent</text>
+  <text x="500" y="70" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#94a3b8">Modular Bridge Ecosystem Topology &amp; Zero-Key Subscription Routing</text>
+
+  <!-- Core Host System: Hermes Agent -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="100" width="900" height="120" rx="12" fill="url(#cardGrad)" stroke="#f59e0b" stroke-width="2" />
+    <rect x="50" y="100" width="900" height="32" rx="12" fill="#d97706" />
+    <text x="70" y="122" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="600" fill="#ffffff">Hermes Agent Host (Nous Research Runtime) &amp; Plugin Registry</text>
+    <text x="70" y="160" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#cbd5e1">Config: ~/.hermes/config.yaml | Plugins: ~/.hermes/plugins/ | Skills: ~/.hermes/skills/</text>
+    <text x="70" y="185" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#94a3b8">Native Hook / Tool Registry: Dynamic register(ctx) with full JSON Schemas &amp; Agent Plugins v1 manifests</text>
+  </g>
+
+  <!-- Plugin 1: Subscription Bridge -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="250" width="280" height="310" rx="12" fill="url(#cardGrad)" stroke="#818cf8" stroke-width="2" />
+    <rect x="50" y="250" width="280" height="32" rx="12" fill="#4f46e5" />
+    <text x="65" y="272" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#ffffff">Subscription Bridge (:5288)</text>
+    <text x="65" y="305" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#e2e8f0">• Port 5288 FastAPI Gateway</text>
+    <text x="65" y="325" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#e2e8f0">• OpenAI Compatible /v1 API</text>
+    
+    <rect x="65" y="345" width="250" height="36" rx="6" fill="#312e81" stroke="#6366f1" />
+    <text x="75" y="368" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#c7d2fe">Codex: ChatGPT Pro (~/.codex)</text>
+    
+    <rect x="65" y="390" width="250" height="36" rx="6" fill="#312e81" stroke="#6366f1" />
+    <text x="75" y="413" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#c7d2fe">Antigravity: Gemini 3.8 (~/.gemini)</text>
+    
+    <rect x="65" y="435" width="250" height="36" rx="6" fill="#312e81" stroke="#6366f1" />
+    <text x="75" y="458" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#c7d2fe">Claude Sonnet &amp; Kimi VIP</text>
+
+    <text x="65" y="505" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#38bdf8">Result: $0 Incremental Cost</text>
+  </g>
+
+  <!-- Plugin 2: CLI Bridge -->
+  <g filter="url(#shadow)">
+    <rect x="360" y="250" width="280" height="310" rx="12" fill="url(#cardGrad)" stroke="#10b981" stroke-width="2" />
+    <rect x="360" y="250" width="280" height="32" rx="12" fill="#059669" />
+    <text x="375" y="272" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#ffffff">CLI Bridge (Direct Execution)</text>
+    <text x="375" y="305" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#e2e8f0">• Instant Subprocess Invocation</text>
+    <text x="375" y="325" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#e2e8f0">• 5 Native Coding CLI Adapters</text>
+    
+    <rect x="375" y="345" width="250" height="36" rx="6" fill="#064e3b" stroke="#10b981" />
+    <text x="385" y="368" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#a7f3d0">Cursor Agent (cursor-agent.cmd)</text>
+    
+    <rect x="375" y="390" width="250" height="36" rx="6" fill="#064e3b" stroke="#10b981" />
+    <text x="385" y="413" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#a7f3d0">OpenAI Codex (codex.cmd)</text>
+    
+    <rect x="375" y="435" width="250" height="36" rx="6" fill="#064e3b" stroke="#10b981" />
+    <text x="385" y="458" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#a7f3d0">Google Antigravity &amp; OpenCode</text>
+
+    <text x="375" y="505" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#34d399">Result: Multi-Agent Symbiosis</text>
+  </g>
+
+  <!-- Plugin 3: Delegation Bridge -->
+  <g filter="url(#shadow)">
+    <rect x="670" y="250" width="280" height="310" rx="12" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="2" />
+    <rect x="670" y="250" width="280" height="32" rx="12" fill="#0284c7" />
+    <text x="685" y="272" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#ffffff">Delegation Bridge (Review-First)</text>
+    <text x="685" y="305" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#e2e8f0">• Review-First Safety Guardrails</text>
+    <text x="685" y="325" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#e2e8f0">• Git Worktree &amp; Diff Tracking</text>
+    
+    <rect x="685" y="345" width="250" height="36" rx="6" fill="#0c4a6e" stroke="#38bdf8" />
+    <text x="695" y="368" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#bae6fd">1. delegate_task(agent, brief)</text>
+    
+    <rect x="685" y="390" width="250" height="36" rx="6" fill="#0c4a6e" stroke="#38bdf8" />
+    <text x="695" y="413" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#bae6fd">2. review_task (inspect git diff)</text>
+    
+    <rect x="685" y="435" width="250" height="36" rx="6" fill="#0c4a6e" stroke="#38bdf8" />
+    <text x="695" y="458" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#bae6fd">3. land_task or reject_task</text>
+
+    <text x="685" y="505" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#38bdf8">Result: Zero Uncontrolled Edits</text>
+  </g>
+</svg>

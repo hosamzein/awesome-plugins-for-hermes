@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="opBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#1e1e2f" />
+    </linearGradient>
+    <filter id="opShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="480" fill="url(#opBg)" />
+
+  <text x="500" y="45" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700" fill="#f8fafc">Hermes Agent Dual-Path Operational Workflow</text>
+  <text x="500" y="70" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#94a3b8">Choosing between Model-Level Subscription Invocations and Task-Level CLI Delegation</text>
+
+  <!-- Step 1: User Request -->
+  <g filter="url(#opShadow)">
+    <rect x="50" y="110" width="180" height="120" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="140" y="145" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#ffffff">Hermes Intake</text>
+    <text x="140" y="175" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#94a3b8">User Request</text>
+    <text x="140" y="195" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#94a3b8">or Prompt</text>
+  </g>
+
+  <!-- Step 2: Hermes Decision Gateway -->
+  <g filter="url(#opShadow)">
+    <polygon points="370,110 450,170 370,230 290,170" fill="#334155" stroke="#f59e0b" stroke-width="2"/>
+    <text x="370" y="165" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#ffffff">Operation</text>
+    <text x="370" y="180" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#ffffff">Mode?</text>
+  </g>
+
+  <!-- Branch Up: LLM Completion -->
+  <path d="M 450 150 L 530 130" stroke="#818cf8" stroke-width="2" />
+  <text x="490" y="125" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#818cf8">LLM Inference</text>
+
+  <g filter="url(#opShadow)">
+    <rect x="530" y="90" width="420" height="110" rx="10" fill="#1e1e38" stroke="#818cf8" stroke-width="2"/>
+    <text x="550" y="120" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#ffffff">Path A: Subscription Bridge Gateway (:5288)</text>
+    <text x="550" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#cbd5e1">1. Converts OpenAI ChatCompletion JSON to target subscription runner</text>
+    <text x="550" y="165" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#cbd5e1">2. Invokes local auth (Codex, Antigravity, Claude, Cursor, Kimi)</text>
+    <text x="550" y="185" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#34d399">3. Returns streaming text back to Hermes Agent (100% Zero-Key)</text>
+  </g>
+
+  <!-- Branch Down: CLI Delegation -->
+  <path d="M 450 190 L 530 290" stroke="#10b981" stroke-width="2" />
+  <text x="470" y="250" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#10b981">Coding Delegation</text>
+
+  <g filter="url(#opShadow)">
+    <rect x="530" y="240" width="420" height="110" rx="10" fill="#0f291e" stroke="#10b981" stroke-width="2"/>
+    <text x="550" y="270" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#ffffff">Path B: Review-First Delegation Bridge</text>
+    <text x="550" y="295" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#cbd5e1">1. Hermes calls `delegate_task(agent='cursor', brief=...)`</text>
+    <text x="550" y="315" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#cbd5e1">2. Implementer executes in sandbox; diff is isolated</text>
+    <text x="550" y="335" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#34d399">3. User reviews diff: land_task (commits) or reject_task (reverts)</text>
+  </g>
+
+  <!-- Bottom Result Banner -->
+  <rect x="50" y="390" width="900" height="50" rx="8" fill="#1e293b" stroke="#38bdf8" />
+  <text x="500" y="420" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#38bdf8">Total Autonomous Coordination with Review Safety &amp; $0 Incremental Cost</text>
+</svg>
